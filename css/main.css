@@ -22,6 +22,12 @@ body {
 .second-letter {
   color: #03b0db;
 }
+#icoo{
+  display: none;
+  font-size: 25px;
+  padding: 10px;
+  color: black;
+}
 .list {
   width: 600px;
   display: flex;
@@ -335,8 +341,20 @@ ul {
   }
 }
 @media (max-width: 998px) {
-  .list {
+  .list ul{
     display: none;
+  }
+  .nav{
+    align-items: flex-start;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .list{
+    width: 50px;
+  }
+  #icoo{
+    display:inline-block;
   }
   .disc1 {
     margin-top: 50px;
@@ -367,6 +385,16 @@ ul {
   .resp {
     margin-top: 50px;
   }
+  .disc1 ,
+  .img1{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .img1 img{
+    width: 100%;
+    height: 100%;
+  }
   .cards {
     display: block;
     width: 90%;
@@ -393,11 +421,20 @@ ul {
     width: 85%;
     margin: 0 auto 15px;
   }
+  .footer{
+    height: 400px;
+  }
   .foot {
     flex-direction: column;
   }
 }
 @media (max-width: 576px) {
+  .second-part div{
+    height: 300px;
+  }
+  .second-part{
+    margin-bottom: 500px;
+  }
   #cont-two {
     width: 90%;
     margin-right: auto;
